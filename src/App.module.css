@@ -1,0 +1,8 @@
+.headerModuleClass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f1356d;
+  color: white;
+}
