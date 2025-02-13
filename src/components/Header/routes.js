@@ -4,7 +4,7 @@ const routes = [
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
   { href: "/account", label: "Account" },
-  { href: "/login", label: "Login" },
+  { href: "/cart", label: "Cart" },
 ];
 
 export default routes;
