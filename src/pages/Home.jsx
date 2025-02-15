@@ -4,7 +4,11 @@ import { useLoaderData } from "react-router-dom";
 const Home = () => {
   const data = useLoaderData();
 
-  return <div>Home</div>;
+  return (
+    <div>
+      <h2>New Feature </h2>
+    </div>
+  );
 };
 
 export default Home;
