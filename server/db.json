@@ -103,9 +103,10 @@
   ],
   "users": [
     {
-      "id": "1",
-      "name": "John Doe",
-      "email": "eslam@gmail.com"
+      "id": "42a7",
+      "email": "eslamshaheer@gmail.com",
+      "username": "Eslam Shaheer",
+      "password": "1234567"
     }
   ]
 }

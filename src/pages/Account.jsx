@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 const Account = () => {
-  return <div>Account</div>;
+  return <h1>Account</h1>;
 };
 
 export default Account;

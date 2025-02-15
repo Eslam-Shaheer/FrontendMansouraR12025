@@ -24,6 +24,11 @@ import ProductDetails from "./pages/ProductDetails";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import Cart from "./pages/Cart";
+import ProductsWithThunk from "./pages/ProductsWithThunk";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import ProtectedRoute from "./components/ProtectedRoute";
+import UploadImage from "./pages/UploadImage";
 
 const routes = createBrowserRouter([
   {
@@ -34,10 +39,19 @@ const routes = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+        // loader: () => {
+
+        // },
+        // lazy: true,
+        // action: () => {},
       },
       {
         path: "/account",
-        element: <Account />,
+        element: (
+          <ProtectedRoute>
+            <Account />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "/contact",
@@ -56,8 +70,24 @@ const routes = createBrowserRouter([
         element: <ProductDetails />,
       },
       {
+        path: "/ProductsWithThunk",
+        element: <ProductsWithThunk />,
+      },
+      {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/sign-up",
+        element: <SignUp />,
+      },
+      {
+        path: "/upload",
+        element: <UploadImage />,
       },
       {
         path: "*",
